@@ -63,7 +63,9 @@ text-decoration:none;
 /* HERO */
 .hero{
 height:100vh;
-background:url('file_000000007e2071f5b4a93fc078650d10') center/cover;
+background:
+linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+url('estudiojuridico.jpg') center/cover;
 display:flex;
 justify-content:center;
 align-items:center;
@@ -84,6 +86,25 @@ margin-top:15px;
 padding:100px 40px;
 max-width:1100px;
 margin:auto;
+}
+
+/* SOBRE */
+.sobre-box{
+display:flex;
+gap:40px;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.sobre-box img{
+width:260px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.5);
+transition:0.4s;
+}
+
+.sobre-box img:hover{
+transform:scale(1.05);
 }
 
 /* CARDS */
@@ -131,6 +152,7 @@ padding:12px 25px;
 background:#c9a96e;
 color:#000;
 text-decoration:none;
+border-radius:5px;
 }
 
 /* FLOAT */
@@ -165,6 +187,7 @@ width:28px;
 
 <body>
 
+<!-- NAV -->
 <div class="nav">
 <div class="logo">Estudio Policastro</div>
 <div class="menu-icon" onclick="toggleMenu()">☰</div>
@@ -177,6 +200,7 @@ width:28px;
 <a href="#contacto">Contacto</a>
 </div>
 
+<!-- HERO -->
 <section class="hero" id="inicio">
 <div>
 <h1>Defensa legal firme y estratégica</h1>
@@ -185,17 +209,29 @@ width:28px;
 </div>
 </section>
 
+<!-- SOBRE -->
 <section class="section fade" id="sobre">
 <h2>Sobre el Dr. Eduardo Javier Policastro</h2>
+
+<div class="sobre-box">
+
+<img src="foto.jpg">
+
+<div>
 <p>
-Con más de 23 años de experiencia, el Dr. Policastro se especializa en brindar soluciones concretas a problemas legales complejos.
+Con más de 23 años de experiencia, el Dr. Policastro se dedica a resolver problemas legales con un enfoque claro y estratégico.
 </p>
 <br>
 <p>
-Su enfoque se basa en la atención personalizada, la honestidad y la defensa firme de los derechos del cliente, garantizando tranquilidad y protección patrimonial.
+Su trabajo se basa en la atención personalizada, la honestidad y una defensa firme de los derechos del cliente, brindando tranquilidad y protección patrimonial.
 </p>
+</div>
+
+</div>
+
 </section>
 
+<!-- SERVICIOS -->
 <section class="section fade" id="servicios">
 <h2>Servicios</h2>
 
@@ -233,16 +269,19 @@ Su enfoque se basa en la atención personalizada, la honestidad y la defensa fir
 
 </section>
 
+<!-- CONTACTO -->
 <section class="section fade" id="contacto">
 <h2>Contacto</h2>
 <p>📍 San Luis, Argentina</p>
 <p>📧 estudiopolicastro@gmail.com</p>
 </section>
 
+<!-- FOOTER -->
 <div class="footer">
 © Estudio Policastro
 </div>
 
+<!-- BOTONES -->
 <a href="https://wa.me/5492664851075?text=Hola,%20me%20contacto%20desde%20la%20web!" class="float whatsapp">
 <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
 </a>
