@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Estudio Policastro | Abogado en San Luis</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family: 'Montserrat', sans-serif;
+background:#0d0d0d;
+color:#fff;
+scroll-behavior:smooth;
+}
+
+/* NAV */
+.nav{
+position:fixed;
+width:100%;
+display:flex;
+justify-content:space-between;
+padding:20px 40px;
+background:rgba(0,0,0,0.7);
+backdrop-filter: blur(10px);
+z-index:1000;
+}
+
+.logo{
+font-family:'Playfair Display';
+font-size:22px;
+}
+
+.menu-icon{
+font-size:28px;
+cursor:pointer;
+}
+
+.menu{
+position:fixed;
+right:-100%;
+top:0;
+height:100%;
+width:260px;
+background:#000;
+padding:60px 20px;
+transition:0.4s;
+}
+
+.menu a{
+display:block;
+margin:20px 0;
+color:#fff;
+text-decoration:none;
+}
+
+.menu.active{ right:0; }
+
+/* HERO */
+.hero{
+height:100vh;
+background:url('file_000000007e2071f5b4a93fc078650d10') center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero h1{
+font-family:'Playfair Display';
+font-size:50px;
+}
+
+.hero p{
+margin-top:15px;
+}
+
+/* SECTION */
+.section{
+padding:100px 40px;
+max-width:1100px;
+margin:auto;
+}
+
+/* CARDS */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#1a1a1a;
+padding:20px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+/* ANIMACION */
+.fade{
+opacity:0;
+transform:translateY(40px);
+transition:0.6s;
+}
+
+.fade.active{
+opacity:1;
+transform:translateY(0);
+}
+
+/* FOOTER */
+.footer{
+background:#000;
+padding:40px;
+text-align:center;
+}
+
+/* BOTONES */
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#c9a96e;
+color:#000;
+text-decoration:none;
+}
+
+/* FLOAT */
+.float{
+position:fixed;
+right:20px;
+width:55px;
+height:55px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+bottom:20px;
+cursor:pointer;
+}
+
+.whatsapp{
+background:#25D366;
+}
+
+.instagram{
+background:#E1306C;
+bottom:90px;
+}
+
+.float img{
+width:28px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="nav">
+<div class="logo">Estudio Policastro</div>
+<div class="menu-icon" onclick="toggleMenu()">☰</div>
+</div>
+
+<div class="menu" id="menu">
+<a href="#inicio">Inicio</a>
+<a href="#sobre">Información Profesional</a>
+<a href="#servicios">Servicios</a>
+<a href="#contacto">Contacto</a>
+</div>
+
+<section class="hero" id="inicio">
+<div>
+<h1>Defensa legal firme y estratégica</h1>
+<p>Asesoramiento jurídico integral en San Luis</p>
+<a href="https://wa.me/5492664851075?text=Hola,%20me%20contacto%20desde%20la%20web!" class="btn">Solicitar consulta</a>
+</div>
+</section>
+
+<section class="section fade" id="sobre">
+<h2>Sobre el Dr. Eduardo Javier Policastro</h2>
+<p>
+Con más de 23 años de experiencia, el Dr. Policastro se especializa en brindar soluciones concretas a problemas legales complejos.
+</p>
+<br>
+<p>
+Su enfoque se basa en la atención personalizada, la honestidad y la defensa firme de los derechos del cliente, garantizando tranquilidad y protección patrimonial.
+</p>
+</section>
+
+<section class="section fade" id="servicios">
+<h2>Servicios</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Derecho Laboral</h3>
+<p><b>Problema:</b> Despidos o accidentes laborales.</p>
+<p><b>Solución:</b> Defensa legal completa.</p>
+<p><b>Beneficio:</b> Indemnización justa.</p>
+</div>
+
+<div class="card">
+<h3>Derecho Civil</h3>
+<p><b>Problema:</b> Conflictos legales.</p>
+<p><b>Solución:</b> Estrategia jurídica clara.</p>
+<p><b>Beneficio:</b> Protección patrimonial.</p>
+</div>
+
+<div class="card">
+<h3>Desalojos</h3>
+<p><b>Problema:</b> Inquilinos morosos.</p>
+<p><b>Solución:</b> Acción legal rápida.</p>
+<p><b>Beneficio:</b> Recuperación del inmueble.</p>
+</div>
+
+<div class="card">
+<h3>Sucesiones y Divorcios</h3>
+<p><b>Problema:</b> Conflictos familiares.</p>
+<p><b>Solución:</b> Mediación y representación.</p>
+<p><b>Beneficio:</b> Resolución ordenada.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section fade" id="contacto">
+<h2>Contacto</h2>
+<p>📍 San Luis, Argentina</p>
+<p>📧 estudiopolicastro@gmail.com</p>
+</section>
+
+<div class="footer">
+© Estudio Policastro
+</div>
+
+<a href="https://wa.me/5492664851075?text=Hola,%20me%20contacto%20desde%20la%20web!" class="float whatsapp">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+</a>
+
+<a href="https://instagram.com/estudiopolicastro" class="float instagram">
+<img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+</a>
+
+<script>
+function toggleMenu(){
+document.getElementById("menu").classList.toggle("active");
+}
+
+const fade = document.querySelectorAll('.fade');
+
+window.addEventListener('scroll',()=>{
+fade.forEach(el=>{
+if(el.getBoundingClientRect().top < window.innerHeight-100){
+el.classList.add('active');
+}
+});
+});
+</script>
+
+</body>
+</html>
